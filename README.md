@@ -2,7 +2,7 @@
 
 Bu React uygulaması, kullanıcıların adlarını, soyadlarını ve yaşadıkları şehirleri girerek hava durumu bilgisini alabilmelerini sağlar. Ayrıca, kullanıcılar koordinasyon bilgilerini vermeyi seçebilirler.
 
-![Görüntü 1 10 2023 19 27](https://github.com/NursahDemirpolat/weather-formic/assets/87416365/e9b362fd-ff45-4af9-83ce-b025882bd4a1)
+![Görüntü 1 10 2023 20 27](https://github.com/NursahDemirpolat/weather-formic/assets/87416365/6e07f97e-ee53-4e16-b324-5b955ed62a72)
 ![Görüntü 1 10 2023 19 28](https://github.com/NursahDemirpolat/weather-formic/assets/87416365/2f5a0131-c709-4daa-aa79-db5d1f32ac09)
 
 ## Özellikler

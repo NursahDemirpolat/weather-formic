@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 88vh;
+  font-family: Arial, sans-serif;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.magic-form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0px 8px 8px 0px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  min-height: 438px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-feedback {
+  font-size: 14px;
+  margin-top: 10px;
+  color: red;
+}
+
+.input {
+  width: 378px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  max-height: 40px;
+  overflow-y: auto;
+}
+
+select#country {
+  width: 400px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.weather-info {
+  text-align: center;
+  padding: 20px;
+  background-color: #3399ff;
+  color: #fff;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 18px;
+}
+
+.header {
+  background: #3399ff;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-title {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  height: 40px;
+  width: 40px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.sunglasses-icon {
+  background-color: #3399ff;
+  padding: 15px;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  transform: translate(215px, -240px);
+  position: absolute;
+}
+
+.footer {
+  background: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.information {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  background: white;
+  color: #3399ff;
+  font-size: 20px;
+}
+
+@media (max-width: 620px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .input {
+    width: 275px;
+  }
+  select#country {
+    width: 298px;
+  }
+  .sunglasses-icon {
+    transform: translate(0px, -288px);
+  }
+
+  .weather-info {
+    border-radius: 8px 8px 0px 0px;
+    max-width: 300px;
+    min-height: 200px;
+  }
+  .magic-form {
+    border-radius: 0px 0px 8px 8px;
+    max-width: 298px;
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .header {
+    margin-bottom: 0px;
   }
 }

@@ -104,7 +104,7 @@ function FormComponent({ handleSubmit, handleReset }) {
                   touched.coord && errors.coord ? "error" : ""
                 }`}
               >
-                <option value="" label="Şehir seçiniz"></option>
+                <option value="" label="Seçiniz"></option>
                 <option value="Evet">Evet</option>
                 <option value="Hayır">Hayır</option>
               </Field>

@@ -1,71 +1,43 @@
-# Getting Started with Create React App
+# Hava Durumu Formu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu React uygulaması, kullanıcıların adlarını, soyadlarını ve yaşadıkları şehirleri girerek hava durumu bilgisini alabilmelerini sağlar. Ayrıca, kullanıcılar koordinasyon bilgilerini vermeyi seçebilirler.
 
-## Available Scripts
+![Görüntü 1 10 2023 19 27](https://github.com/NursahDemirpolat/weather-formic/assets/87416365/e9b362fd-ff45-4af9-83ce-b025882bd4a1)
+![Görüntü 1 10 2023 19 28](https://github.com/NursahDemirpolat/weather-formic/assets/87416365/2f5a0131-c709-4daa-aa79-db5d1f32ac09)
 
-In the project directory, you can run:
+## Özellikler
 
-### `npm start`
+- Kullanıcılar adlarını, soyadlarını ve yaşadıkları şehri girerler.
+- Kullanıcılar koordinasyon bilgisini "Evet" veya "Hayır" olarak seçebilirler.
+- Sözleşmeyi kabul etmek için bir onay kutusu bulunur.
+- Hava durumu bilgileri OpenWeatherMap API kullanılarak çekilir.
+- Kullanıcı adı ve hava durumu bilgileri sonuç sayfasında görüntülenir.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Kullanılan Teknolojiler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Formik (Form yönetimi için)
+- Yup (Doğrulama için)
+- Axios (API istekleri için)
+- React Icons (İkonlar için)
 
-### `npm test`
+## Kurulum
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Proje dizinini yerel makinenize klonlayın veya ZIP dosyasını indirin.
+2. Terminal veya komut istemcisini açın ve proje klasörüne gidin.
+3. Aşağıdaki komutları çalıştırarak gerekli bağımlılıkları yükleyin ve projeyi başlatın:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## (your api key) İçin:
+- OpenWeatherMap web sitesine gidin ve sağ üst köşede bulunan "Sign In" (Giriş Yap) veya "Sign Up" (Üye Ol) seçeneklerinden birini kullanarak bir hesap oluşturun veya mevcut hesabınıza giriş yapın.
+- Hesabınıza giriş yaptıktan sonra, sağ üst köşede kullanıcı adınıza tıklayarak "My API Keys" (API Anahtarlarım) seçeneğine gidin.
+- API Anahtarlarınızın bulunduğu bir sayfa açılacaktır. Eğer daha önce API anahtarı oluşturmadıysanız, "Create Key" (Anahtar Oluştur) veya benzer bir seçenek kullanarak yeni bir API anahtarı oluşturun.
+- API anahtarınız oluşturulduktan sonra, bu anahtarı kopyalayın.
+- API anahtarınızı App.js dosyanızdaki API isteği yaparken kullanacağınız yere yapıştırın. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```bash
+npm install
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# weather-formic
